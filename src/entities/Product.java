@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.Objects;
-
 public class Product {
     private String name;
     private Double price;
@@ -25,14 +23,6 @@ public class Product {
 
     public void setPrice(Double price) {
         this.price = price;
-    }
-
-    public static void staticPriceUpdate(Product product){
-        product.setPrice(product.getPrice() * 1.1);
-    }
-
-    public void nonStaticPriceUpdate(){
-        price = price * 1.1;
     }
 
     @Override
